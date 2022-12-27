@@ -1,7 +1,7 @@
-let days = document.getElementById('#days');
-let hours = document.getElementById('#hours');
-let minutes = document.getElementById('#minutes');
-let seconds = document.getElementById('#seconds');
+let days = document.getElementById('days');
+let hours = document.getElementById('hours');
+let minutes = document.getElementById('minutes');
+let seconds = document.getElementById('seconds');
 
 let dd = document.getElementById('dd');
 let hh = document.getElementById('hh');
@@ -16,8 +16,8 @@ let sec_dot = document.querySelector('.sec_dot');
 let endDate = '01/01/2023 00:00:00';
 
 let x = setInterval(function(){
-    let now = newDate(endDate).getTime();
-    let countDown = newDate().getTime();
+    let now = new Date(endDate).getTime();
+    let countDown = new Date().getTime();
     let distance = now - countDown;
 
     // time calculation for days, hours, minutes and seconds
